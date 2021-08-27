@@ -1,0 +1,52 @@
+<!--
+ * @Description: 
+ * @Author: Jamboy
+ * @Date: 2021-08-27 09:48:39
+ * @LastEditTime: 2021-08-27 10:30:31
+-->
+<html>
+
+<head>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    {{msg}}
+    <div>
+      <input type="text" v-model="info">
+      <button @click="handleAdd">添加</button>
+    </div>
+    <ul  v-for="info in list">
+      <todo-item :info="info"></todo-item>
+    </ul>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  
+  <script>
+    Vue.component('todo-item',{
+      props:['info'],
+      template:'<li>{{info}}</li>'
+    })
+
+    new Vue({
+      el: '#app',
+      data() {
+        return {
+          msg: 'Hello 1world',
+          info:'',
+          list: []
+        }
+      },
+      methods: {
+        handleAdd(){
+          this.list.push(this.info)
+        }
+      },
+    })
+  </script>
+</body>
+</html>
