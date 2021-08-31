@@ -2,11 +2,10 @@
  * @Description: 
  * @Author: Jamboy
  * @Date: 2021-08-31 09:28:59
- * @LastEditTime: 2021-08-31 09:35:59
+ * @LastEditTime: 2021-08-31 11:21:47
 -->
 <template>
-  <div class="home">
-  </div>
+  <div class="home"></div>
 </template>
 
 <script>
