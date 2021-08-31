@@ -2,11 +2,11 @@
  * @Description: 
  * @Author: Jamboy
  * @Date: 2021-08-31 09:28:59
- * @LastEditTime: 2021-08-31 15:14:11
+ * @LastEditTime: 2021-08-31 17:46:42
  */
 import Vue from "vue";
-// import Antd from 'ant-design-vue' 
-import {Button} from 'ant-design-vue'
+import Antd from 'ant-design-vue' 
+// import {Button,Layout,Icon} from 'ant-design-vue'
 
 import App from "./App.vue";
 import router from "./router";
@@ -15,7 +15,9 @@ import 'ant-design-vue/dist/antd.less'
 
 Vue.config.productionTip = false;
 
-Vue.use(Button)
+Vue.use(Antd)
+// Vue.use(Layout)
+// Vue.use(Icon)
 
 new Vue({
   router,
