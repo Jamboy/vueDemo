@@ -2,7 +2,7 @@
  * @Description: 右侧设置抽屉
  * @Author: Jamboy
  * @Date: 2021-08-31 17:42:04
- * @LastEditTime: 2021-08-31 18:02:42
+ * @LastEditTime: 2021-09-01 09:41:33
 -->
 
 <template>
@@ -16,12 +16,11 @@
       @close="onClose"
       width="300px"
     >
-      <template v-slot:handle>
-        1ffff
-        <div class="btn" @click="showDrawer">
-          <a-icon :type="visible ? 'close' : 'setting'"></a-icon>
-        </div>
-      </template>
+    <template v-slot:handle>
+      <div class="btn" @click="showDrawer" >
+        <a-icon :type="visible ? 'close' : 'setting'"></a-icon>
+      </div>
+    </template>
       <p>Some contents...</p>
       <p>Some contents...</p>
       <p>Some contents...</p>
@@ -41,7 +40,7 @@ export default {
       console.log('visible', val)
     },
     showDrawer() {
-      this.visible = true
+      this.visible = !this.visible
     },
     onClose() {
       this.visible = false
@@ -53,10 +52,14 @@ export default {
 .btn {
   position: absolute;
   top: 260px;
-  right: 20px;
+  right: 300px;
   height: 44px;
   width: 44px;
+  cursor: pointer;
   text-align: center;
+  font-size: 18px;
   line-height: 44px;
+  background: #1890ff;
+  border-radius: 4px 0 0 4px;
 }
 </style> 

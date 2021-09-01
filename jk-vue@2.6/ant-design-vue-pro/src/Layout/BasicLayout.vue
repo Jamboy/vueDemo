@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Jamboy
  * @Date: 2021-08-31 14:00:13
- * @LastEditTime: 2021-08-31 17:45:34
+ * @LastEditTime: 2021-09-01 09:26:23
 -->
 <template>
   <a-layout id="components-layout-demo-side" style="min-height: 100vh">
@@ -23,8 +23,8 @@
       </a-layout-content>
       <a-layout-footer style="text-align: center">
         Ant Design ©2018 Created by Ant UED
-        <Footer />
         <SettingDrawer/>
+        <Footer />
       </a-layout-footer>
     </a-layout>
   </a-layout>
