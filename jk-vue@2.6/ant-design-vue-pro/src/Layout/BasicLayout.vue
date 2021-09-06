@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Jamboy
  * @Date: 2021-08-31 14:00:13
- * @LastEditTime: 2021-09-01 11:42:45
+ * @LastEditTime: 2021-09-03 15:17:37
 -->
 <template>
   <a-layout id="components-layout-demo-side" style="min-height: 100vh">
@@ -24,9 +24,7 @@
       <a-layout-footer style="text-align: center">
         Ant Design ©2018 Created by Ant UED
         <Footer />
-        <Authorized :authority="['admin']">
           <SettingDrawer />
-        </Authorized>
       </a-layout-footer>
     </a-layout>
   </a-layout>
@@ -36,7 +34,6 @@ import Header from './Header.vue'
 import SideMenu from './SideMenu.vue'
 import Footer from './Footer.vue'
 import SettingDrawer from '../components/SettingDrawer/index'
-import Authorized from '../components/Authorized.vue'
 
 export default {
   components: {
@@ -44,7 +41,6 @@ export default {
     SideMenu,
     Footer,
     SettingDrawer,
-    Authorized
   },
   data() {
     return {
