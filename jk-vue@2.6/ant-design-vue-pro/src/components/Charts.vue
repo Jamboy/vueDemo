@@ -2,7 +2,7 @@
  * @Description: 图标
  * @Author: Jamboy
  * @Date: 2021-09-03 15:13:29
- * @LastEditTime: 2021-09-03 16:22:12
+ * @LastEditTime: 2021-09-06 09:55:25
 -->
 <template>
   <div ref="chartDom" style="height: 400px"></div>
